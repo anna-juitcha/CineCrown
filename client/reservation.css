@@ -1,0 +1,143 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Cormorant Garamond',serif;
+}
+
+
+
+/* zone à droite du menu */
+.main-content{
+    margin-left: 350px;
+    padding: 40px;
+}
+
+
+
+/* titre */
+.title{
+    text-align:center;
+    color:#111;
+    font-size:45px;
+    margin-bottom:40px;
+    font-weight:bold;
+}
+
+/* section recherche */
+.search-box{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-bottom:50px;
+}
+
+.search-box select,
+.search-box input{
+    width:250px;
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    outline:none;
+    font-size:16px;
+    background:white;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+.search-box button{
+    padding:15px 35px;
+    border:none;
+    border-radius:10px;
+    background:black;
+    color:#d4b45f;
+    font-size:17px;
+    cursor:pointer;
+    transition:0.3s;
+    font-weight:bold;
+}
+
+.search-box button:hover{
+    background:#222;
+    transform:scale(1.05);
+}
+
+/* tableau */
+
+.table-container{
+    overflow-x:auto;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+}
+
+table thead{
+    background:black;
+    color:#d4b45f;
+}
+
+table th{
+    padding:20px;
+    font-size:18px;
+}
+
+table td{
+    padding:18px;
+    text-align:center;
+    border-bottom:1px solid #ddd;
+    color:#333;
+}
+
+/* hover */
+table tbody tr:hover{
+    background:#f8f8f8;
+}
+
+/* bouton reserver */
+
+.btn-reserver{
+    padding:10px 20px;
+    background:#d4b45f;
+    color:black;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn-reserver:hover{
+    background:black;
+    color:#d4b45f;
+}
+
+/* responsive */
+
+@media(max-width:900px){
+
+    .main-content{
+        margin-left:0;
+        padding:20px;
+    }
+
+    .title{
+        font-size:32px;
+    }
+
+    .search-box{
+        flex-direction:column;
+    }
+
+    .search-box select,
+    .search-box input{
+        width:100%;
+    }
+
+}

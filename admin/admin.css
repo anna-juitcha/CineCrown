@@ -1,0 +1,133 @@
+/* =========================
+   CONTENU TABLEAU
+========================= */
+
+.container{
+    margin-left: 300px;
+    padding: 40px;
+}
+
+/* =========================
+   TITRE
+========================= */
+
+.container h1{
+    color: #111;
+    font-size: 35px;
+    margin-bottom: 25px;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+/* =========================
+   TABLE
+========================= */
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.25);
+}
+
+/* =========================
+   ENTETE TABLE
+========================= */
+
+table thead{
+    background: linear-gradient(90deg, #B8860B 0%, #edda6e 50%, #B8860B 100%);
+}
+
+table thead th{
+    padding: 18px;
+    color: #000;
+    font-size: 17px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* =========================
+   LIGNES
+========================= */
+
+table tbody tr{
+    border-bottom: 1px solid #ddd;
+    transition: 0.3s;
+}
+
+table tbody tr:nth-child(even){
+    background: #f9f9f9;
+}
+
+table tbody tr:hover{
+    background: rgba(255, 215, 0, 0.15);
+}
+
+/* =========================
+   CELLULES
+========================= */
+
+table tbody td{
+    padding: 16px;
+    text-align: center;
+    color: #222;
+    font-size: 15px;
+}
+
+/* =========================
+   STATUT
+========================= */
+
+table tbody td span{
+    background: #0a0a0a;
+    color: #FFD700;
+    padding: 7px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* =========================
+   BOUTON SUPPRIMER
+========================= */
+
+table tbody td a{
+    text-decoration: none;
+    background: #000;
+    color: #FFD700;
+    padding: 10px 16px;
+    border-radius: 8px;
+    transition: 0.3s;
+    font-weight: bold;
+    border: 1px solid #FFD700;
+}
+.lien a{
+    text-decoration: none;
+    color: #897710;
+    transition: 0.3s;
+    font-weight: bold;
+    font-size: 24px;
+}
+table tbody td a:hover{
+    background: #FFD700;
+    color: #000;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:900px){
+
+    .container{
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    table{
+        display: block;
+        overflow-x: auto;
+    }
+}
