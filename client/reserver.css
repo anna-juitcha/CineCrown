@@ -13,7 +13,7 @@
 
 .reserver-box{
     width:100%;
-    background:linear-gradient(50deg,#ae9522,#d4b45f);
+    background:linear-gradient(50deg,#d4b45f,#ae9522,#d4b45f);
     border-radius:20px;
     padding:40px;
 }
